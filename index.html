@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Report: Chicken Road 2</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #0b1120; color: #e2e8f0; padding: 40px 20px; display: flex; justify-content: center; }
+        .container { max-width: 1200px; width: 100%; }
+        h1 { font-size: 2.5rem; border-left: 5px solid #38bdf8; padding-left: 20px; margin-bottom: 10px; }
+        .subtitle { color: #94a3b8; margin-bottom: 40px; padding-left: 25px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .card { background: #1e293b; padding: 25px; border-radius: 12px; border: 1px solid #334155; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5); }
+        .card .label { color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+        .card .value { font-size: 1.8rem; font-weight: bold; margin-top: 8px; color: #f8fafc; }
+        .card .highlight-green { color: #4ade80; }
+        .card .highlight-blue { color: #38bdf8; }
+        .card .highlight-orange { color: #fbbf24; }
+        .section-title { font-size: 1.5rem; margin: 30px 0 20px 0; color: #f1f5f9; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+        .findings-list { background: #1e293b; padding: 25px; border-radius: 12px; border: 1px solid #334155; list-style: none; }
+        .findings-list li { padding: 12px 0; border-bottom: 1px solid #2d3a4f; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .findings-list li:last-child { border-bottom: none; }
+        .badge { background: #38bdf8; color: #0b1120; padding: 2px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        .footer { margin-top: 40px; text-align: center; color: #64748b; border-top: 1px solid #1e293b; padding-top: 20px; }
+        a { color: #38bdf8; text-decoration: none; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🕵️ OSINT Intelligence Report</h1>
+    <div class="subtitle">Target: chicken-road2.app | Investigator: [Your Name] | Date: [Today]</div>
+
+    <!-- Metrics Dashboard -->
+    <div class="grid">
+        <div class="card"><div class="label">Trust Score (ScamAdviser)</div><div class="value highlight-green">96/100</div></div>
+        <div class="card"><div class="label">Registrar</div><div class="value highlight-blue">Key-Systems GmbH</div></div>
+        <div class="card"><div class="label">Hosting Stack</div><div class="value highlight-blue">Cloudflare + Vercel</div></div>
+        <div class="card"><div class="label">Core Framework</div><div class="value highlight-orange">Next.js (React)</div></div>
+        <div class="card"><div class="label">SSL Type</div><div class="value highlight-orange">DV (Domain Validated)</div></div>
+        <div class="card"><div class="label">Registration Date</div><div class="value">May 13, 2025</div></div>
+    </div>
+
+    <h2 class="section-title">🔍 Critical Security Observations</h2>
+    <ul class="findings-list">
+        <li><span><strong>AI Scraping Blocked:</strong> robots.txt blocks ChatGPT-User & AhrefsBot</span> <span class="badge">Privacy Posture</span></li>
+        <li><span><strong>Hidden Ownership:</strong> RDAP shows UK proxy (info@domain-contact.org)</span> <span class="badge">Transparency Risk</span></li>
+        <li><span><strong>Weak SSL:</strong> No Organization (O) field in certificate</span> <span class="badge">Low Assurance</span></li>
+        <li><span><strong>Internal Paths Hidden:</strong> /api/* and /go/* are disallowed in robots.txt</span> <span class="badge">Security by Obscurity</span></li>
+        <li><span><strong>Gambling Services:</strong> No visible regulatory license displayed</span> <span class="badge">Legal Red Flag</span></li>
+    </ul>
+
+    <h2 class="section-title">📸 Evidence Screenshots</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+        <a href="screenshots/safty2.png" target="_blank"><img src="screenshots/safty2.png" alt="ScamAdviser" style="width:150px; height:100px; object-fit:cover; border-radius:8px; border:1px solid #334155;"></a>
+        <a href="screenshots/whois5.png" target="_blank"><img src="screenshots/whois5.png" alt="WHOIS" style="width:150px; height:100px; object-fit:cover; border-radius:8px; border:1px solid #334155;"></a>
+        <a href="screenshots/DNS.png" target="_blank"><img src="screenshots/DNS.png" alt="DNS" style="width:150px; height:100px; object-fit:cover; border-radius:8px; border:1px solid #334155;"></a>
+        <a href="screenshots/Hiddin File.png" target="_blank"><img src="screenshots/Hiddin File.png" alt="Robots" style="width:150px; height:100px; object-fit:cover; border-radius:8px; border:1px solid #334155;"></a>
+    </div>
+    <p style="margin-top:15px; color:#94a3b8;">Click images to view full size. All 14 screenshots are available in the repo.</p>
+
+    <div class="footer">
+        Built for Project 02 · OSINT Investigation · Public Repository
+    </div>
+</div>
+</body>
+</html>
